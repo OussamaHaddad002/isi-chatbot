@@ -30,11 +30,11 @@ To manage this project effectively, we adopted an **Agile methodology**. This ap
   
 #### Features Status (DONE)
 
-- *Flask API* - Backend system is ready, enabling user interaction and retrieval through REST endpoints.
-- *Pinecone Integration* - Pinecone vector storage and retrieval is complete, storing document vectors and allowing for accurate query matching.
-- *Together API Response Generation* - Successfully integrated to provide natural language responses.
-- *Speech Recognition* - Users can send voice queries, which are converted to text and processed.
-- *PDF Processing* - Efficient text extraction from PDF documents using `pdfplumber` and `PyPDF2`, allowing for large-scale ingestion of ISI's academic content.
+- **Flask API** - Backend system is ready, enabling user interaction and retrieval through REST endpoints.
+- **Pinecone Integration** - Pinecone vector storage and retrieval is complete, storing document vectors and allowing for accurate query matching.
+- **Together API Response Generation** - Successfully integrated to provide natural language responses.
+- **Speech Recognition** - Users can send voice queries, which are converted to text and processed and vice versa.
+- **PDF Processing** - Efficient text extraction from PDF documents using `pdfplumber` and `PyPDF2`, allowing for large-scale ingestion of ISI's academic content.
 
 ### 3. Technology Stack
 
