@@ -1,8 +1,8 @@
 ------
 
-# EZCHAT Project Documentation
+# Project Documentation
 
-EZCHAT is a chatbot and retrieval-augmented generation (RAG) system designed to assist users with document retrieval, Q&A, and chatbot interaction, especially tailored for the Higher Institute of Computer Science environment.
+ISIChat is a chatbot and retrieval-augmented generation (RAG) system designed to assist users with document retrieval, Q&A, and chatbot interaction, especially tailored for the Higher Institute of Computer Science environment.
 
 ## Project Overview
 EZCHAT combines Pinecone for vector storage, TogetherAI API for model-based responses, and Sentence Transformers for text embeddings. Through this setup, the project provides students and university with the ability to interact with the chatbot, ask questions, and retrieve documents related to various topics available within the university's repository.
