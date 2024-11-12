@@ -8,12 +8,12 @@ ISIChat is a chatbot and retrieval-augmented generation (RAG) system designed to
 EZCHAT combines Pinecone for vector storage, TogetherAI API for model-based responses, and Sentence Transformers for text embeddings. Through this setup, the project provides students and university with the ability to interact with the chatbot, ask questions, and retrieve documents related to various topics available within the university's repository.
 
 ### Table of Contents
-1. [Project Management Strategy](#Project-Management-Strategy)
-2. [Key Features](#key-features)
-3. [Technology Stack](#technology-stack)
-4. [Use Cases](#use-cases)
-5. [Models and Technologies Explanation](#models-and-technologies-explanation)
-6. [Future Perspectives](#future-perspectives)
+1. [Project Management Strategy](###Project-Management-Strategy)
+2. [Key Features](###key-features)
+3. [Technology Stack](###technology-stack)
+4. [Use Cases](###use-cases)
+5. [Models and Technologies Explanation](###models-and-technologies-explanation)
+6. [Future Perspectives](###future-perspectives)
 
 ---
 
