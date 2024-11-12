@@ -96,7 +96,8 @@ The RAG architecture allows for efficient, context-aware Q&A. Here’s a high-le
 3. **Response Generation**: Together API uses the retrieved documents as context to generate an accurate response.
 
 #### Diagram of RAG Workflow
-![RAG System Workflow](https://dummyimage.com/600x400/000/fff&text=RAG+System+Workflow)
+
+![drive](https://github.com/user-attachments/assets/93183259-52e0-4bb6-8b8e-01d57b6c7700)
 
 ### 6. Future Perspectives
 
