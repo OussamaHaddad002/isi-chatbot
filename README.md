@@ -5,10 +5,10 @@
 EZCHAT is a chatbot and retrieval-augmented generation (RAG) system designed to assist users with document retrieval, Q&A, and chatbot interaction, especially tailored for the Higher Institute of Computer Science environment.
 
 ## Project Overview
-EZCHAT combines Pinecone for vector storage, Together API for model-based responses, and Sentence Transformers for text embeddings. Through this setup, the project provides students and faculty with the ability to interact with the chatbot, ask questions, and retrieve documents related to various topics available within the university's repository.
+EZCHAT combines Pinecone for vector storage, TogetherAI API for model-based responses, and Sentence Transformers for text embeddings. Through this setup, the project provides students and university with the ability to interact with the chatbot, ask questions, and retrieve documents related to various topics available within the university's repository.
 
 ### Table of Contents
-1. [Project Management Strategy](#project-management-strategy)
+1. [Project Management Strategy](#Project-Management-Strategy)
 2. [Key Features](#key-features)
 3. [Technology Stack](#technology-stack)
 4. [Use Cases](#use-cases)
@@ -19,7 +19,29 @@ EZCHAT combines Pinecone for vector storage, Together API for model-based respon
 
 ### 1. Project Management Strategy
 
-To manage this project effectively, we adopted an **Agile methodology**. This approach allowed us to break down the development into sprints, focusing on delivering functional components each time. With bi-weekly check-ins, we ensured each feature was thoroughly tested and documented, keeping our development aligned with project objectives and deadlines.
+To manage this project effectively within a strict 24-hour timeline, we used a highly focused, sprint-based approach, typical of Agile methodology. We identified core features, prioritized rapid development, and conducted continuous testing. This enabled us to deliver functional components efficiently, meeting the project's objectives within the short timeframe.
+
+This version highlights the Agile-inspired approach adapted to the rapid development setting. 
+#### Requirements
+
+Install dependencies with:
+
+```bash
+pip install os dotenv sentence-transformers pinecone-client together numpy speechrecognition flask flask-cors tempfile langdetect pdfplumber pypdf2 unidecode
+```
+
+
+#### Environment Setup
+
+
+Create a .env file in the root directory with your API keys:
+
+
+```
+PINECONE_API_KEY=your_pinecone_api_key
+PINECONE_ENVIRONMENT=your_pinecone_environment
+TOGETHER_AI_API_KEY=your_together_ai_api_key
+```
 
 ### 2. Key Features
 
@@ -34,7 +56,7 @@ To manage this project effectively, we adopted an **Agile methodology**. This ap
 - **Pinecone Integration** - Pinecone vector storage and retrieval is complete, storing document vectors and allowing for accurate query matching.
 - **Together API Response Generation** - Successfully integrated to provide natural language responses.
 - **Speech Recognition** - Users can send voice queries, which are converted to text and processed and vice versa.
-- **PDF Processing** - Efficient text extraction from PDF documents using `pdfplumber` and `PyPDF2`, allowing for large-scale ingestion of ISI's academic content.
+- **PDF Processing** - Efficient text extraction from PDF, Excel documents using `pdfplumber` and `PyPDF2`, allowing for large-scale ingestion of ISI's academic content.
 
 ### 3. Technology Stack
 
@@ -47,7 +69,10 @@ Each component was carefully chosen based on performance, compatibility, and eas
 | **Embedding Model**    | Sentence Transformers (all-MiniLM-L6-v2) | Provides fast and high-quality embeddings, even with limited resources. Chose this over Ollama due to download and connectivity issues at ISI. |
 | **Response Generation**| Together API          | Offers free usage for students ($5), providing a cost-effective alternative to OpenAI with similar capabilities.                                 |
 | **Speech Recognition** | SpeechRecognition (Google API) | Allows transcription of voice queries with a reliable and widely used service.                                                                    |
-| **PDF Processing**     | pdfplumber, PyPDF2    | Enables PDF text extraction, crucial for processing ISI's academic documents.                                                                     |
+| **PDF Processing**     | pdfplumber, PyPDF2    | Enables PDF text extraction, crucial for processing ISI's academic documents.
+
+
+
 
 ### 4. Use Cases
 
