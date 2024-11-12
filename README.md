@@ -8,16 +8,17 @@ ISIChat is a chatbot and retrieval-augmented generation (RAG) system designed to
 EZCHAT combines Pinecone for vector storage, TogetherAI API for model-based responses, and Sentence Transformers for text embeddings. Through this setup, the project provides students and university with the ability to interact with the chatbot, ask questions, and retrieve documents related to various topics available within the university's repository.
 
 ### Table of Contents
-1. [Project Management Strategy](###Project-Management-Strategy)
-2. [Key Features](###key-features)
-3. [Technology Stack](###technology-stack)
-4. [Use Cases](###use-cases)
-5. [Models and Technologies Explanation](###models-and-technologies-explanation)
-6. [Future Perspectives](###future-perspectives)
+1. [Project Management Strategy](#project-management-strategy)
+2. [Key Features](#key-features)
+3. [Technology Stack](#technology-stack)
+4. [Use Cases](#use-cases)
+5. [Models and Technologies Explanation](#models-and-technologies-explanation)
+6. [Future Perspectives](#future-perspectives)
+
 
 ---
 
-### 1. Project Management Strategy
+### Project Management Strategy
 
 To manage this project effectively within a strict 24-hour timeline, we used a highly focused, sprint-based approach, typical of Agile methodology. We identified core features, prioritized rapid development, and conducted continuous testing. This enabled us to deliver functional components efficiently, meeting the project's objectives within the short timeframe.
 
@@ -43,7 +44,7 @@ PINECONE_ENVIRONMENT=your_pinecone_environment
 TOGETHER_AI_API_KEY=your_together_ai_api_key
 ```
 
-### 2. Key Features
+### Key Features
 
 - **Flask API**: Provides endpoints for chatbot interactions, including text-based and voice-based queries.
 - **RAG System**: Combines Pinecone for document retrieval and Together API for generating responses, making the chatbot capable of handling extensive and context-aware information.
@@ -58,7 +59,7 @@ TOGETHER_AI_API_KEY=your_together_ai_api_key
 - **Speech Recognition** - Users can send voice queries, which are converted to text and processed and vice versa.
 - **PDF Processing** - Efficient text extraction from PDF, Excel documents using `pdfplumber` and `PyPDF2`, allowing for large-scale ingestion of ISI's academic content.
 
-### 3. Technology Stack
+### Technology Stack
 
 Each component was carefully chosen based on performance, compatibility, and ease of integration:
 
@@ -74,13 +75,13 @@ Each component was carefully chosen based on performance, compatibility, and eas
 
 
 
-### 4. Use Cases
+### Use Cases
 
 - **Document Retrieval**: Students and faculty can search for specific academic documents, and the system retrieves relevant content using Pinecone.
 - **Q&A Interaction**: Users can ask questions, and the chatbot provides answers based on ISI’s documents and the Together API response generation.
 - **Multilingual Support**: Supports both English and French queries, making it accessible for diverse users at ISI.
 
-### 5. Models and Technologies Explanation
+### Models and Technologies Explanation
 
 #### Why Together API Over OpenAI
 The Together API offers a $5 free credit to students, making it a financially attractive option for testing and experimentation. OpenAI models are highly capable but often come with higher costs and rate limits. Together API models perform competitively in generating answers, making it a suitable alternative for this project.
@@ -99,7 +100,7 @@ The RAG architecture allows for efficient, context-aware Q&A. Here’s a high-le
 
 ![drive](https://github.com/user-attachments/assets/93183259-52e0-4bb6-8b8e-01d57b6c7700)
 
-### 6. Future Perspectives
+### Future Perspectives
 
 **Enhancements**:
 1. **Contextual Memory**: Enable the chatbot to remember recent interactions within a session for better conversational flow.
