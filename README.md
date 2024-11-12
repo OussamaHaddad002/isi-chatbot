@@ -98,7 +98,7 @@ The RAG architecture allows for efficient, context-aware Q&A. Here’s a high-le
 
 #### Diagram of RAG Workflow
 
-![drive](https://github.com/user-attachments/assets/93183259-52e0-4bb6-8b8e-01d57b6c7700)
+![drive](https://github.com/user-attachments/assets/d593ce99-0b29-4024-966c-ae1a2ebc0d26)
 
 ### Future Perspectives
 
