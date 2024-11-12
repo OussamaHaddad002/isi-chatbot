@@ -1,4 +1,4 @@
-# Project Name
+# EZCHAT
 
 A chatbot and retrieval system using Pinecone, Sentence Transformers, Together API, and Flask. This project enables document storage, query retrieval, and response generation using a Retrieval-Augmented Generation (RAG) system.
 
